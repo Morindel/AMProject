@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  AMProject
+
+  Created by Jakub Kołodziej on 21/10/2018.
+  Copyright © 2018 Jakub Kołodziej. All rights reserved.
+*/
+
+//General
+"loading" = "loading";
+"cancel" = "Cancel";
+"select" = "Select";
+"noData" = "No data";
+
+
+//News
+"newsDetails" = "News Details";
+"newsList" = "News List";
+"newsMore" = "More information";
+"addToFavourite" = "Add to favourite";
+"deleteFromFavourite" = "Delete from favourite";
+
+//Menu
+"selectTitle" = "Hello! \nYou can get latest news in three diferent ways!";
+"topNews" = "Top News from selected country";
+"searchNews" = "Search news by passing keyword";
+"chooseCountry" = "Choose about which country you want to get news";
+"inputKeyword" = "Please input article keyword";
+"searcharticles" = "Search articles";
+"articlekeyword" = "Article keyword";
+"favouriteArticles" = "Favourite articles";
+
+
+//Countries
+"UnitedStates" = "United States";
+"Poland" = "Poland";

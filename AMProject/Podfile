@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_modular_headers!
+
+target 'AMProject' do
+
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireObjectMapper'
+  pod 'Realm'
+  pod 'RealmSwift'
+  pod 'ObjectMapper'
+  pod 'Kingfisher'
+
+end

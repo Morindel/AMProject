@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  AMProject
+
+  Created by Jakub Kołodziej on 21/10/2018.
+  Copyright © 2018 Jakub Kołodziej. All rights reserved.
+*/
+
+//General
+"loading" = "Ładowanie";
+"cancel" = "Anuluj";
+"select" = "Wybierz";
+"noData" = "Brak danych";
+
+//NewsDetails
+
+"newsDetails" = "Szczegóły wiadomości";
+"newsList" = "Lista wiadomości";
+"newsMore" = "Więcej informacji znajdziesz na";
+"addToFavourite" = "Dodaj do ulubionych";
+"deleteFromFavourite" = "Usuń z ulubionych";
+
+//Menu
+"selectTitle" = "Witaj! \nMożesz otrzymać artykuły na trzy różne sposoby ";
+"topNews" = "Najpopularniejsze artykuły z wybranego kraju";
+"searchNews" = "Znajdź artykuł podając słowo klucz";
+"chooseCountry" = "Wybierz kraj, którego mają dotyczyć wiadomości";
+"inputKeyword" = "Wprowadź słowo kluczowe dla artykułu";
+"searcharticles" = "Szukaj artykułów";
+"articlekeyword" = "Slowo kluczowe artykułów";
+"favouriteArticles" = "Ulubione artykuły";
+
+//Countries
+"UnitedStates" = "Stany Zjednoczone";
+"Poland" = "Polska";

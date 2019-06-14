@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Btf-p3-CFK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Details View Controller-->
+        <scene sceneID="BkG-ul-TXw">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Btf-p3-CFK" customClass="NewsDetailsViewController" customModule="AMProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="51o-G9-UMd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7RC-R0-YwX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Btf-p3-CFK" id="9ST-Gm-PfN"/>
+                                    <outlet property="delegate" destination="Btf-p3-CFK" id="tCg-6e-tt1"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvT-BO-GfU">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.60392156862745094" green="0.60271537303924561" blue="0.60392156862745094" alpha="0.78887521404109584" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="w2T-k0-KJT"/>
+                                </constraints>
+                                <state key="normal" title="Add to favourite">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToFavouriteClicked:" destination="Btf-p3-CFK" eventType="touchUpInside" id="dyb-od-KKP"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK9-Dt-x2H">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.034920876080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Delete from  favourite">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteFromFavouriteButtonClicked:" destination="Btf-p3-CFK" eventType="touchUpInside" id="Gc4-Ki-GLJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jK9-Dt-x2H" firstAttribute="leading" secondItem="oj4-YA-wzk" secondAttribute="leading" id="26u-yw-dJO"/>
+                            <constraint firstItem="oj4-YA-wzk" firstAttribute="trailing" secondItem="jK9-Dt-x2H" secondAttribute="trailing" id="5DU-HL-Rir"/>
+                            <constraint firstItem="oj4-YA-wzk" firstAttribute="bottom" secondItem="JvT-BO-GfU" secondAttribute="bottom" id="5ch-lP-Fx2"/>
+                            <constraint firstItem="oj4-YA-wzk" firstAttribute="trailing" secondItem="JvT-BO-GfU" secondAttribute="trailing" id="Hhx-GZ-ctc"/>
+                            <constraint firstItem="jK9-Dt-x2H" firstAttribute="width" secondItem="JvT-BO-GfU" secondAttribute="width" id="M5b-5d-Vmo"/>
+                            <constraint firstItem="JvT-BO-GfU" firstAttribute="leading" secondItem="oj4-YA-wzk" secondAttribute="leading" id="PXT-f6-8ye"/>
+                            <constraint firstItem="jK9-Dt-x2H" firstAttribute="height" secondItem="JvT-BO-GfU" secondAttribute="height" id="R93-vA-F2d"/>
+                            <constraint firstItem="jK9-Dt-x2H" firstAttribute="bottom" secondItem="oj4-YA-wzk" secondAttribute="bottom" id="UId-we-7DL"/>
+                            <constraint firstItem="7RC-R0-YwX" firstAttribute="leading" secondItem="oj4-YA-wzk" secondAttribute="leading" id="Xax-Am-Lkt"/>
+                            <constraint firstItem="7RC-R0-YwX" firstAttribute="top" secondItem="oj4-YA-wzk" secondAttribute="top" id="bFD-0x-mlR"/>
+                            <constraint firstItem="oj4-YA-wzk" firstAttribute="trailing" secondItem="7RC-R0-YwX" secondAttribute="trailing" id="ceh-HY-510"/>
+                            <constraint firstItem="JvT-BO-GfU" firstAttribute="top" secondItem="7RC-R0-YwX" secondAttribute="bottom" id="jKf-fp-iNf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oj4-YA-wzk"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="JvT-BO-GfU" id="3rd-GY-nqp"/>
+                        <outlet property="deleteButton" destination="jK9-Dt-x2H" id="1H6-TC-p8s"/>
+                        <outlet property="tableView" destination="7RC-R0-YwX" id="WBk-KF-tsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdD-Xs-D2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>
